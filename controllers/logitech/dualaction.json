@@ -23,54 +23,54 @@
     ],
     "buttons": [
         {
-            "value": 24,
+            "mask": 16,
             "pin": 4,
-            "name": "1"
+            "name": "b1"
         },
         {
-            "value": 40,
+            "mask": 32,
             "pin": 4,
-            "name": "2"
+            "name": "b2"
         },
         {
-            "value": 72,
+            "mask": 64,
             "pin": 4,
-            "name": "3"
+            "name": "b3"
         },
         {
-            "value": 136,
+            "mask": 128,
             "pin": 4,
-            "name": "4"
+            "name": "b4"
         },
         {
-            "value": 1,
+            "mask": 1,
             "pin": 5,
-            "name": "5"
+            "name": "b5"
         },
         {
-            "value": 2,
+            "mask": 2,
             "pin": 5,
-            "name": "6"
+            "name": "b6"
         },
         {
-            "value": 4,
+            "mask": 4,
             "pin": 5,
-            "name": "7"
+            "name": "b7"
         },
         {
-            "value": 8,
+            "mask": 8,
             "pin": 5,
-            "name": "8"
+            "name": "b8"
         },
         {
-            "value": 16,
+            "mask": 16,
             "pin": 5,
-            "name": "9"
+            "name": "b9"
         },
         {
-            "value": 32,
+            "mask": 32,
             "pin": 5,
-            "name": "10"
+            "name": "b10"
         },
         {
             "value": 6,
