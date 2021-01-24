@@ -221,6 +221,8 @@ Gamepad.prototype._processButtons = function( data ) {
     for( var i = 0, len = buttons.length; i < len; i ++ ) {
         button = buttons[ i ];
         isPressed = ( data[ button.pin ] & 0xff ) === button.value;
+        this._states[ button.name ] = isPressed;
+
         if( this._states[ button.name ] === undefined ) {
             this._states[ button.name ] = isPressed;
 
@@ -238,7 +240,6 @@ Gamepad.prototype._processButtons = function( data ) {
             this.emit( button.name + ':release' );
         }
 
-        this._states[ button.name ] = isPressed;
     }
 };
 
