@@ -221,18 +221,8 @@ Gamepad.prototype._processButtons = function( data ) {
     for( var i = 0, len = buttons.length; i < len; i ++ ) {
         button = buttons[ i ];
         isPressed = ( data[ button.pin ] & 0xff ) === button.value;
-        this._states[ button.name ] = isPressed;
-
-        if( this._states[ button.name ] === undefined ) {
-            this._states[ button.name ] = isPressed;
-
-            if( isPressed ) {
-                this.emit( button.name + ':press' );
-            }
-
-            continue;
-        }
         currentState = this._states[ button.name ];
+        this._states[ button.name ] = isPressed;
 
         if( isPressed && currentState !== isPressed ) {
             this.emit( button.name + ':press' );
